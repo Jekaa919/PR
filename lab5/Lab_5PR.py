@@ -9,7 +9,7 @@ def send_email(sender_email, recipient_email, subject, message):
     msg["To"] = recipient_email
 
     try:
-        server = smtplib.SMTP("smtp.mail.ru", 587)
+        server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(sender_email, "0dLg2V0PUgU5fCPtXGCi")
         server.send_message(msg)
@@ -20,4 +20,4 @@ def send_email(sender_email, recipient_email, subject, message):
 
 
 if __name__ == "__main__":
-    send_email("lasco00@mail.ru", "lasco00@mail.ru", "Test Subject", "test")
+    send_email("jekaa919@gmail.com", "jekaa919@gmail.com", "Test Subject", "test")
